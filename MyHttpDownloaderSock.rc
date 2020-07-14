@@ -1,0 +1,189 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MYDM                ICON                    "icon1.ico"
+IDI_MYDM_SMALL          ICON                    "ico00001.ico"
+IDI_MYDM1               ICON                    "ico00002.ico"
+IDI_MYDM3               ICON                    "icon2.ico"
+IDI_MYDM2               ICON                    "ico00003.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_FILE_NAME DIALOGEX 0, 0, 204, 48
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTERMOUSE | WS_POPUP | WS_CAPTION
+CAPTION "Save file name and path:"
+FONT 10, "Microsoft Sans Serif", 400, 0, 0xCC
+BEGIN
+    EDITTEXT        IDC_EDIT_FILE_NAME,7,7,189,15,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "Wait 4 second.",IDC_CHECK_TIMER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,28,71,10
+    PUSHBUTTON      "OK",IDOK,148,27,50,14
+    PUSHBUTTON      "Browse",IDC_BUTTON_BROWSE,82,27,61,14
+END
+
+IDD_DIALOG_FILE_OVERWRITE DIALOGEX 0, 0, 303, 76
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "File with the same size and name exists. Overwrite existing?"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_FILE_NAME,7,25,289,15,ES_AUTOHSCROLL
+    LTEXT           "New name for writing:",IDC_STATIC,8,8,148,17
+    PUSHBUTTON      "Yes, overwrite",IDOK,99,55,76,14
+    PUSHBUTTON      "Cancel",IDCANCEL,246,55,50,14
+    PUSHBUTTON      "Create new",ID_WRITE_NEW,178,55,65,14
+    PUSHBUTTON      "Browse",IDC_BUTTON_BROWSE,243,10,54,13
+END
+
+IDD_DIALOG_FILE_OVERWRITE1 DIALOGEX 0, 0, 303, 76
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION 
+"File with the other size and the same name exists. Overwrite existing?"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "New name for writing:",IDC_STATIC,8,8,148,17
+    EDITTEXT        IDC_EDIT_FILE_NAME,7,25,289,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "Yes, overwrite",IDOK,99,55,76,14
+    PUSHBUTTON      "Cancel",IDCANCEL,246,55,50,14
+    PUSHBUTTON      "Create new",ID_WRITE_NEW,178,55,65,14
+    PUSHBUTTON      "Browse",IDC_BUTTON_BROWSE,243,10,54,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_FILE_NAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 197
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 41
+    END
+
+    IDD_DIALOG_FILE_OVERWRITE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 296
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_PRGRS_BRUSH  BITMAP                  "pt58.bmp"
+IDB_BITMAP_PRGRS_BRUSH1 BITMAP                 "pt593.bmp"
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "My HTTP downloader"
+    IDC_MYDM                "myHttpDL"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

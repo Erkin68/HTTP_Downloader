@@ -1,0 +1,25 @@
+[OPTIONS]
+Auto Index=Yes
+Compatibility=1.1 or later
+Compiled file=myHttpDL.chm
+Contents file=myHttpDL.hhc
+Default Font=,8,0
+Default Window=myHttpDL
+Default topic=How to work.htm
+Display compile progress=No
+Full-text search=Yes
+Index file=myHttpDL.hhc
+Language=0x409 Английский (США)
+Title=My http downloader
+
+[WINDOWS]
+myHttpDL="My http downloader.","D:\Savar\Auxilary\MyHttmDownloader_Socket\MyHttpDLMaster\Helps\myHttpDL.hhc","D:\Savar\Auxilary\MyHttmDownloader_Socket\MyHttpDLMaster\Helps\myHttpDL.hhc","How to work.htm","How to work.htm",,,,,0x3520,,0x387e,,0x10bf0000,0x7610,,,,,0
+
+
+[FILES]
+How to uninstall.htm
+How to work.htm
+License.htm
+
+[INFOTYPES]
+

@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="FrameName" value="myHttpDL">
+	<param name="Window Styles" value="0x800025">
+	<param name="ImageType" value="Folder">
+<param name="Font" value=",12,0">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="How to work?">
+		<param name="Local" value="D:\Savar\Auxilary\MyHttmDownloader_Socket\MyHttpDLMaster\Helps\How to work.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="How to uninstall?">
+		<param name="Local" value="How to uninstall.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="License ...">
+		<param name="Local" value="License.htm">
+		<param name="Local" value="License.htm">
+		</OBJECT>
+</UL>
+</BODY></HTML>

@@ -1,0 +1,273 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MYHTTPDLMASTER      ICON                    "icon2.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_MYHTTPDLMASTER MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Add new URL (Insert key)",    ID_FILE_ADDNEWURL
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "Options"
+    BEGIN
+        MENUITEM "Options",                     ID_OPTIONS_OPTIONS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "Index",                       ID_HELP_INDEX
+        MENUITEM "&About my HTTP downloader",   IDM_ABOUT
+    END
+END
+
+IDR_MENU_POPUP MENU 
+BEGIN
+    POPUP "Download"
+    BEGIN
+        MENUITEM "Download as one part.",       ID_DOWNLOAD_DOWNLOAD
+        MENUITEM "Download as many partitions.", ID_DOWNLOAD_PARTTO
+        MENUITEM "Split partitions to one file.", ID_DOWNLOAD_SPLIT
+    END
+END
+
+IDR_MENU_POPUP1 MENU 
+BEGIN
+    POPUP "Download"
+    BEGIN
+        MENUITEM "Download as one part.",       ID_DOWNLOAD_DOWNLOAD
+        MENUITEM "Download as many partitions.", ID_DOWNLOAD_PARTTO
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 148, 77
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About my HTTP downloader:"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDI_MYHTTPDLMASTER,IDC_STATIC,8,19,21,20
+    LTEXT           "My HTTP DL, Beta version 1.1.1",IDC_STATIC,39,6,102,8,SS_NOPREFIX
+    LTEXT           "Copyright (C): Erkin Sattoriy",IDC_STATIC1,39,18,99,8
+    LTEXT           "Karaulbazar,Uzbekistan-2015",IDC_STATIC2,39,30,98,8
+    LTEXT           "http://programm.uz",IDC_STATIC3,39,42,89,8
+    PUSHBUTTON      "OK",IDOK,91,56,50,14,WS_GROUP
+END
+
+IDD_DIALOG_ADD_NEW_URL DIALOGEX 0, 0, 316, 46
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add new URL to download heap?"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_NEW_URL,7,7,302,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Add and start",IDOK,112,26,87,14
+    PUSHBUTTON      "Cancel",IDCANCEL,259,26,50,14
+    PUSHBUTTON      "Ok",IDC_OK,204,26,50,14
+END
+
+IDD_OPTIONS DIALOGEX 0, 0, 316, 197
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "My HTTP downloader options:"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Protocol string:",IDC_STATIC,8,7,132,11
+    EDITTEXT        IDC_EDIT_PROTOCOL_STRING,150,7,162,13,ES_AUTOHSCROLL
+    LTEXT           "User(agent) string:",IDC_STATIC,8,24,132,11
+    EDITTEXT        IDC_EDIT_AGENT_STRING,150,23,162,13,ES_AUTOHSCROLL
+    LTEXT           "Path for saving files:",IDC_STATIC,8,41,95,11
+    EDITTEXT        IDC_EDIT_OUT_DIR,150,39,162,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_BUTTON_BROWSE,106,39,41,12
+    LTEXT           "Maximum number of partitions:",IDC_STATIC,8,58,109,11
+    CTEXT           "8",IDC_STATIC_1,125,58,13,11
+    CONTROL         "",IDC_SLIDER_MAX_PART,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,145,55,170,14
+    LTEXT           "Minimum number of partitions:",IDC_STATIC,8,75,109,11
+    CTEXT           "4",IDC_STATIC_2,125,76,12,11
+    CONTROL         "",IDC_SLIDER_MIN_PART,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,145,73,170,14
+    LTEXT           "Minimum size of partitions                        for rebuilding:",IDC_STATIC,8,87,102,18
+    CTEXT           "37768 B",IDC_STATIC_3,116,93,30,11
+    CONTROL         "",IDC_SLIDER_MIN_PART_SIZE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,145,90,170,14
+    LTEXT           "Connection wait time:",IDC_STATIC,8,109,104,11
+    CTEXT           "1",IDC_STATIC_4,118,110,26,11
+    CONTROL         "",IDC_SLIDER_CONNECT_TIMEOUT,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,145,107,170,14
+    LTEXT           "Send wait time:",IDC_STATIC,8,126,104,11
+    CTEXT           "1",IDC_STATIC_5,118,127,26,11
+    CONTROL         "",IDC_SLIDER_SEND_TIMEOUT,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,145,124,170,14
+    LTEXT           "Receive wait time:",IDC_STATIC,8,143,104,11
+    CTEXT           "1",IDC_STATIC_6,118,144,26,11
+    CONTROL         "",IDC_SLIDER_RECEIVE_TIMEOUT,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,145,140,170,14
+    LTEXT           "Buffer size:",IDC_STATIC,8,160,77,11
+    CTEXT           "1048576 B",IDC_STATIC_7,91,160,48,11
+    CONTROL         "",IDC_SLIDER_BUFFER_SIZE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,145,156,170,14
+    PUSHBUTTON      "OK",IDOK,259,176,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,192,176,60,14
+END
+
+IDD_ON_FIN_BOX DIALOGEX 0, 0, 316, 59
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "File downloaded and saved:"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "URL:",IDC_STATIC,7,10,24,9
+    EDITTEXT        IDC_EDIT_URL,35,7,274,13,ES_AUTOHSCROLL
+    LTEXT           "File:",IDC_STATIC,7,24,24,9
+    EDITTEXT        IDC_EDIT_FILE,35,21,274,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Shell execute",ID_SHELL,109,39,70,14
+    PUSHBUTTON      "Open folder",ID_OPEN_FOLDER,186,39,66,14
+    PUSHBUTTON      "Cancel",IDCANCEL,259,39,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 141
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 70
+    END
+
+    IDD_DIALOG_ADD_NEW_URL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 190
+    END
+
+    IDD_ON_FIN_BOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 52
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "My HTTP downloader"
+    IDC_MYHTTPDLMASTER      "My HHTP downloader master class"
+END
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
